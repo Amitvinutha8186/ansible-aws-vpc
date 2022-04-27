@@ -2,6 +2,7 @@
  - hosts: localhost
    connection: local
    gather_facts: false
+   become: yes
    tasks:
      - name: import VPC variables
        include_vars: vars/vpc_setup
